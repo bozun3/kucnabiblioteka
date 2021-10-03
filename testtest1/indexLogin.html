@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href='CSS\styles.css'>
+    <meta charset="utf-8">
+    <title>Biblioteka</title>
+    <script src= "src/model/Book.js"></script>
+
+</head>
+<body>
+<header>
+
+    <h1>Kućna biblioteka - korisnik bozun3 </h1>
+
+
+
+</header>
+
+<section>
+    <article>
+
+
+        <p>Najbolja stvar o knjigama? Nikada se ne možete zasititi njima niti ih pročitati sve. Ali ako se zadesite da vaša kolekcija knjiga postane nepodnošljivo pretrpana i ukoliko posjedujete malu kućnu biblioteku ova aplikacija je upravo za vas jer će vam pomoći da organizirate svoju biblioteku i nosite je u svom džepu.</p> <br>
+        <p>Napredovanjem tehnologija došli smo do toga da nam se razni planeri, podsjetnici, i mnoštvo drugih stvari nalazi na mobilnom uređaju, s toga smo odlučili kreirati ovu internet aplikaciju koju će razni korisnici moći koristiti i na Android platofrmi kao i na Apple uređajima.</p>
+    </article>
+
+    <article>
+        <h2>Kućna biblioteka najlakše skladištenje knjiga. Podrazumijeva sljedeće operacije:</h2>
+        <menu class="navigation">
+            <li><a href="listBooks.html"><button type="button">Prikaži sve knjige</button></a></li>
+            <li><a href="createBook.html"><button type="button">Dodaj novu knjigu</button></a></li>
+            <li><a href="updateBook.html"><button type="button">Ažuriraj knjigu</button></a></li>
+            <li><a href="deleteBook.html"><button type="button">Izbriši knjigu  </button></a></li>
+            <li><button type="button" onclick="Book.clearData()">Izbriši čitavu kolekciju knjiga </button></li>
+            <li><button type="button" onclick="Book.createTestData()"> Kreiraj testnu bazu </button></li>
+        </menu>
+
+        <div class="main">
+            <h2>Uloguj se u biblioteku:</h2>
+            <form id="form_id" method="post" name="myform">
+                <label>Korisničko ime :</label>
+                <input type="text" name="username" id="username"/>
+                <label>Lozinka :</label>
+                <input type="password" name="password" id="password"/>
+                <input type="button" value="Uloguj se" id="submit" onclick="validate()"/>
+            </form>
+            <span><b class="note">Napomena : </b>Za ovaj demo koristite određeno korisničko ime i lozinku. <br/><b class="valid">Korisničko ime:bozun3 <br/>Lozinka:12345678</b></span>
+        </div>
+        <script src = " src/model/Login.js"></script>
+
+    </article>
+
+    <article>
+        <br>
+        <h3> Jednostavan kalendar za planiranje slobodnog vremena za čitanje.</h3>
+        <div class="container">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
+            </div>
+        </div>
+        <script src = "src/model/Calendar.js"></script>
+    </article>
+</section>
+<div
+        id="footer"><p1>© 2021 Copyright Licnabiblioteka.com . All rights reserved.
+    <a href= "mailto:dean.bozunovic@blc.edu.ba" >dean.bozunovic@blc.edu.ba </a></p1>
+
+</div>
+</body>
+</html>

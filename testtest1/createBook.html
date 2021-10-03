@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <meta charset="UTF-8" />
+    <title>Licna biblioteka</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Book.js"></script>
+    <script src="src/view/createBook.js"></script>
+    <script>
+        window.addEventListener("load", pl.view.createBook.setupUserInterface);
+    </script>
+</head>
+<body>
+<section>
+<article>
+        <h3>Unesi novu knjigu u kolekciju </h3>
+        <form id="Book">
+            <p><label>Indeks: <input name="isbn" /></label></p>
+            <p><label>Naslov: <input name="title" /></label></p>
+            <p><label>Godina: <input name="year" /></label></p>
+            <p><button type="button" name="commit">Sačuvaj </button></p>
+        </form>
+        <nav><a href="index.html">Vrati me na početnu stranu</a></nav>
+
+</article>
+</section>
+    <div
+        id="footer"><p1>© 2021 Copyright Licnabiblioteka.com . All rights reserved.
+    <a href= "mailto:dean.bozunovic@blc.edu.ba" >dean.bozunovic@blc.edu.ba </a></p1>
+
+</div>
+
+</body>
+</html>
